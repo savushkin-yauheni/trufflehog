@@ -1005,6 +1005,8 @@ enum DetectorType {
   EndorLabs = 993;
   ElevenLabs = 994;
   Netsuite = 995;
+  Hashicorp = 996;
+  FirebaseOpenSignup = 997;
 }
 
 message Result {
