@@ -1088,6 +1088,8 @@ const (
 	DetectorType_Onfleet                                 DetectorType = 986
 	DetectorType_Intra42                                 DetectorType = 987
 	DetectorType_Groq                                    DetectorType = 988
+	DetectorType_Hashicorp                               DetectorType = 989
+	DetectorType_FirebaseOpenSignup                      DetectorType = 990
 )
 
 // Enum value maps for DetectorType.
@@ -2078,6 +2080,8 @@ var (
 		986: "Onfleet",
 		987: "Intra42",
 		988: "Groq",
+		989: "Hashicorp",
+		990: "FirebaseOpenSignup",
 	}
 	DetectorType_value = map[string]int32{
 		"Alibaba":                               0,
@@ -3065,6 +3069,8 @@ var (
 		"Onfleet":                          986,
 		"Intra42":                          987,
 		"Groq":                             988,
+		"Hashicorp":                        989,
+		"FirebaseOpenSignup":		        990,
 	}
 )
 

@@ -645,16 +645,14 @@ func run(state overseer.State) {
 		ctx.Logger().Error(err, "error cleaning temp artifacts")
 	}
 
-	metrics := e.GetMetrics()
+	//metrics := e.GetMetrics()
 	// Print results.
-	logger.Info("finished scanning",
-		"chunks", metrics.ChunksScanned,
-		"bytes", metrics.BytesScanned,
-		"verified_secrets", metrics.VerifiedSecretsFound,
-		"unverified_secrets", metrics.UnverifiedSecretsFound,
-		"scan_duration", metrics.ScanDuration.String(),
-		"trufflehog_version", version.BuildVersion,
-	)
+    // 	logger.Info("finished scanning",
+    // 		"chunks", metrics.ChunksScanned,
+    // 		"bytes", metrics.BytesScanned,
+    // 		"verified_secrets", metrics.VerifiedSecretsFound,
+    // 		"unverified_secrets", metrics.UnverifiedSecretsFound,
+    // 	)
 
 	if *printAvgDetectorTime {
 		printAverageDetectorTime(e)
