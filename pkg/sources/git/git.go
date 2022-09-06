@@ -609,7 +609,7 @@ func (s *Git) ScanCommits(ctx context.Context, repo *git.Repository, path string
 			// Scan the commit metadata.
 			// See https://github.com/trufflesecurity/trufflehog/issues/2683
 			var (
-				metadata = s.sourceMetadataFunc("", email, fullHash, when, remoteURL, 0)
+				metadata = s.sourceMetadataFunc("commit_metadata", email, fullHash, when, remoteURL, 0)
 				sb       strings.Builder
 			)
 			sb.WriteString(email)

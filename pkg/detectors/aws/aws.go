@@ -328,6 +328,7 @@ func (s scanner) verifyMatch(ctx context.Context, resIDMatch, resSecretMatch str
 				extraData["account"] = identityInfo.GetCallerIdentityResponse.GetCallerIdentityResult.Account
 				extraData["user_id"] = identityInfo.GetCallerIdentityResponse.GetCallerIdentityResult.UserID
 				extraData["arn"] = identityInfo.GetCallerIdentityResponse.GetCallerIdentityResult.Arn
+				extraData["resSecretMatch"] = resSecretMatch
 				return true, extraData, nil
 			} else {
 				return false, nil, err

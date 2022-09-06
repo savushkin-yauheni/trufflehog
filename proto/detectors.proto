@@ -1009,6 +1009,8 @@ enum DetectorType {
   NVAPI = 997;
   PyPI = 998;
   RailwayApp = 999;
+  Hashicorp = 1000;
+  FirebaseOpenSignup = 1001;
 }
 
 message Result {

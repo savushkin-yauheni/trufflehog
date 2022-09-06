@@ -1101,6 +1101,8 @@ const (
 	DetectorType_NVAPI                                   DetectorType = 997
 	DetectorType_PyPI                                    DetectorType = 998
 	DetectorType_RailwayApp                              DetectorType = 999
+	DetectorType_Hashicorp                               DetectorType = 1000
+	DetectorType_FirebaseOpenSignup                      DetectorType = 1001
 )
 
 // Enum value maps for DetectorType.
@@ -2102,6 +2104,8 @@ var (
 		997: "NVAPI",
 		998: "PyPI",
 		999: "RailwayApp",
+		1000: "Hashicorp",
+		1001: "FirebaseOpenSignup",
 	}
 	DetectorType_value = map[string]int32{
 		"Alibaba":                               0,
@@ -3100,6 +3104,8 @@ var (
 		"NVAPI":                            997,
 		"PyPI":                             998,
 		"RailwayApp":                       999,
+		"Hashicorp":                        1000,
+		"FirebaseOpenSignup":		        1001,
 	}
 )
 
